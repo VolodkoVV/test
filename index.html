@@ -1,0 +1,701 @@
+<html>
+<head>
+<style type="text/css">
+.result{
+        height: 100px;
+        width: 300px;
+        position: fixed;
+        background: rgba(10, 100, 100, 0.5);
+        border: 1px solid black;
+        top: 50px;
+        right: 50px;
+        font-weight: bold;
+        padding: 5px;
+    }
+#table{
+width:100%;
+display:grid;
+grid-template-rows: repeat (41, 1fr);
+grid-template-columns: repeat(5, 1fr);
+}
+#table > div{
+border:0.5px solid black;
+padding-left: 5px;
+padding-right: 5px;
+}
+.names{
+background:lightblue;
+font-weight: bold;
+text-align: center;
+}
+h1, .category, .number{
+text-align: center;    
+}
+ol{
+    list-style-type: none;
+    padding: 0px;
+}
+ol li:nth-child(1)::before { content: 'A.'; }
+ol li:nth-child(2)::before { content: 'B.'; }
+ol li:nth-child(3)::before { content: 'C.'; }
+ol li:nth-child(4)::before { content: 'D.'; }
+.category, .question, .number, .key{
+    padding-top: 15px;
+}
+</style>
+</head>
+<body>
+
+<h1>Tests JavaScript Essential</h1>
+<div id="table">
+<div class="names">№</div>
+<div class="names">Вопрос</div>
+<div class="names">Варианты ответов</div>
+<div class="names">Ключ</div>
+<div class="names">Категория</div>
+<div class="number"><span></span></div>
+<div class="question">Что обозначает приставка Java в имени
+        JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice1">Язык JavaScript и Java это одно и тоже</li>
+<li><input type="radio" name="choice1">Эта приставка указывает что это язык есть
+    облегчённой версией языка Java.</li>
+<li><input type="radio" name="choice1" value="true">Это только название, которое никак не связывает этот
+    язык с языком Java.</li>
+<li><input type="radio" name="choice1">То что эти два языка программирования выпустила
+    одна и та же компания.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое идентификатор в JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice2"  value="true">Это имя переменной или функции.
+</li>
+<li><input type="radio" name="choice2">Это тип данных - Объект</li>
+<li><input type="radio" name="choice2">Это тип данных - Функция</li>
+<li><input type="radio" name="choice2">Это тип данных - Массив</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Какие элементарные типы есть в JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice3">Number, String, Boolean</li>
+<li><input type="radio" name="choice3">Object, Boolean, String</li>
+<li><input type="radio" name="choice3">Array, null, String</li>
+<li><input type="radio" name="choice3" value="true">undefined, null, Number</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Назовите три функции для работы с
+        диалоговыми окнами?
+        </div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice4">alert(); Console.WriteLine(); print();</li>
+<li><input type="radio" name="choice4">alert(); prompt(); print();</li>
+<li><input type="radio" name="choice4" value="true">alert(); prompt(); confirm();</li>
+<li><input type="radio" name="choice4">select(); prompt(); print();</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Язык JavaScript является?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice5" value="true">Прототипно-ориентированный скриптовый язык
+    программирования. </li>
+<li><input type="radio" name="choice5">Cобытийно-ориентированный язык
+    программирования.</li>
+<li><input type="radio" name="choice5">Процедурный язык программирования.</li>
+<li><input type="radio" name="choice5">Аспектно-ориентированый язык программирования</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Какие основные функции языка
+        программирования JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice6" value="true"> Придание динамики веб-страницам</li>
+<li><input type="radio" name="choice6">Для написания конечного продукта под ОС Windows</li>
+<li><input type="radio" name="choice6">Для разгрузки веб-браузера клиента</li>
+<li><input type="radio" name="choice6" value="true">Зачастую для разгрузки сервера на котором
+    находится веб-сайт
+    </li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Кто разработал язык программирования
+        JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice7" value="true">Брендан Айк</li>
+<li><input type="radio" name="choice7">Андерс Хейлсберг</li>
+<li><input type="radio" name="choice7">Джозеф Джорден</li>
+<li><input type="radio" name="choice7">Марк Цукерберг</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Как изначально назывался язык
+        программирования JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice8">AOL</li>
+<li><input type="radio" name="choice8">Netscape</li>
+<li><input type="radio" name="choice8">JavaLite</li>
+<li><input type="radio" name="choice8" value="true">Mocha</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Как официально называется язык
+        программирования JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice9">ActionScript</li>
+<li><input type="radio" name="choice9" value="true">ECMAScript</li>
+<li><input type="radio" name="choice9">Java</li>
+<li><input type="radio" name="choice9">Script</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Переменная типа undefined в JavaScript, это
+        переменная которая хранит -
+        </div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice10"value="true">не определенное значение</li>
+<li><input type="radio" name="choice10">значение типа null</li>
+<li><input type="radio" name="choice10">числовое значение</li>
+<li><input type="radio" name="choice10">значение типа Object</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Введение в
+        JavaScript</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое условная конструкция?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice11" value="true">Блок кода, который выполняется при определенном
+    условии.</li>
+<li><input type="radio" name="choice11">Блок кода, который выполняется определенное
+    количество раз.</li>
+<li><input type="radio" name="choice11">Это функция</li>
+<li><input type="radio" name="choice11">Это массив</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое тернарный оператор?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice12">Это цикл</li>
+<li><input type="radio" name="choice12" value="true">Это условная конструкция</li>
+<li><input type="radio" name="choice12">это ключевое слово</li>
+<li><input type="radio" name="choice12">это функция</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое цикл?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice13" value="true">Это циклическая конструкция, которая выполняется
+    определенное количество раз.
+    </li>
+<li><input type="radio" name="choice13">Это массив</li>
+<li><input type="radio" name="choice13">Это функция</li>
+<li><input type="radio" name="choice13">Это объект</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое итерация?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice14">Это циклическая конструкция.</li>
+<li><input type="radio" name="choice14">Это переменная цикла.</li>
+<li><input type="radio" name="choice14" value="true">Это один проход циклической конструкции.</li>
+<li><input type="radio" name="choice14">Это условная конструкция.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Для чего используются служебные слова
+        continue?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice15" value="true">Для перехода на следующую итерацию цикла</li>
+<li><input type="radio" name="choice15" value="true">Для перехода на метку</li>
+<li><input type="radio" name="choice15">Для завершения цикла</li>
+<li><input type="radio" name="choice15">Для завершения работы JavaScript</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Для чего используются служебные слова
+        break?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice16">Для перехода на следующую итерацию цикла.</li>
+<li><input type="radio" name="choice16">Для перехода на метку</li>
+<li><input type="radio" name="choice16" value="true">Для завершения работы цикла.</li>
+<li><input type="radio" name="choice16" value="true">Для выхода из условной конструкции ветвления</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Цикл с параметрами объявляется с помощью
+        ключевого слова</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice17">continue</li>
+<li><input type="radio" name="choice17">while</li>
+<li><input type="radio" name="choice17">do while</li>
+<li><input type="radio" name="choice17" value="true">for</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Имеется участок кода:<br>
+        for (var i = 0; i < 10; i++) {
+         continue;
+         document.write(i + "<br />");
+        }<br>
+        Какой результат увидит пользователь?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice18"> Результат будет выведены переменные итерации от 0
+    до 9. </li>
+<li><input type="radio" name="choice18" value="true">Результатом будет пустое окно браузера </li>
+<li><input type="radio" name="choice18">Результат будет выведены переменные итерации от 0
+    до 10.</li>
+<li><input type="radio" name="choice18">Результат будет выведены переменные итерации от 1
+    до 9.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Имеется участок кода:<br>
+        var a = "Код";
+        if (a == "Код") { alert("Верно ");}
+        else { alert("НЕ верно ");}
+        alert("Hello");<br>
+        Какой результат увидит пользователь?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice19">Не верно Hello</li>
+<li><input type="radio" name="choice19" value="true">Верно Hello</li>
+<li><input type="radio" name="choice19">Hello</li>
+<li><input type="radio" name="choice19">Верно</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Имеется участок кода:<br>
+        var a = "Кот";
+        var msg = (a == "Код") ? "верно”:" НЕ
+        верно";
+        alert(msg);<br>Какой результат увидит пользователь?
+    </div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice20" value="true">НЕ верно</li>
+<li><input type="radio" name="choice20">Верно</li>
+<li><input type="radio" name="choice20">Верно Не верно</li>
+<li><input type="radio" name="choice20">результатом будет пустое окно браузера</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Условные и
+        циклические
+        конструкции</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое массив в языке программирования
+        JavaScript?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice21">Это функция.</li>
+<li><input type="radio" name="choice21">Это переменная.</li>
+<li><input type="radio" name="choice21" value="true">Это коллекция проиндексированных значений</li>
+<li><input type="radio" name="choice21">Это коллекция не проиндексированных значений</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">При создании массива был использован
+        конструктор Array(), в который передали
+        одно значение «8»<br>
+        var a = Array(8);<br>
+        Какой массив в результате будет создан?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice22">Массив с «8» элементов заполненный числами «8»</li>
+<li><input type="radio" name="choice22">Массив на один элемент с числом «8»</li>
+<li><input type="radio" name="choice22" value="true">Пустой массив на «8» элементов</li>
+<li><input type="radio" name="choice22">Так создавать массив нельзя.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">Как свойство возвращает длину массива?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice23">insert</li>
+<li><input type="radio" name="choice23" value="true">length</li>
+<li><input type="radio" name="choice23">return</li>
+<li><input type="radio" name="choice23">write</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">При вызове на массиве метода Join(), во что
+        будет преобразован массив?<br>
+        var res = arr.join();</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice24">В массиве все элементы будут преобразованы по
+    возможности в числовые.</li>
+<li><input type="radio" name="choice24">Массив будет скопирован в другой массив</li>
+<li><input type="radio" name="choice24">Этот метод никак не относится к преобразованию
+    массива</li>
+<li><input type="radio" name="choice24" value="true">Массив будет преобразован в объединённую строку.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">При вызове на массиве метода reverse(),
+        как будет изменен массив.<br>
+        arr.reverse();</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice25"> Такого метода не существует. B. Будут только уделены
+    все элементы со значением undefined.</li>
+<li><input type="radio" name="choice25"></li>
+<li><input type="radio" name="choice25">Будут только уделены все элементы null</li>
+<li><input type="radio" name="choice25" value="true">Массив будет преобразован с теми же значениями в
+    обратном порядке.
+    </li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">Требуется добавить один элемент в конец
+        массива. Какой метод для этого следует
+        вызвать?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice26" value="true">push();</li>
+<li><input type="radio" name="choice26">join();</li>
+<li><input type="radio" name="choice26">reverse();</li>
+<li><input type="radio" name="choice26">shift();</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">Требуется вернуть первый элемент из
+        массива и при этом удалить его из текущего
+        массива. Какой метод для этого следует
+        вызвать?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice27">push();</li>
+<li><input type="radio" name="choice27">join();</li>
+<li><input type="radio" name="choice27">reverse();</li>
+<li><input type="radio" name="choice27" value="true">shift();</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">Требуется добавить один элемент в начало
+        массива. Какой метод для этого следует
+        вызвать?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice28" value="true">unshift();</li>
+<li><input type="radio" name="choice28">join();</li>
+<li><input type="radio" name="choice28">reverse();</li>
+<li><input type="radio" name="choice28">push();</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">Требуется вернуть фрагмент массива или под
+        массив. Какой метод для этого следует
+        вызвать?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice29">join();</li>
+<li><input type="radio" name="choice29" value="true">slice();</li>
+<li><input type="radio" name="choice29">reverse();</li>
+<li><input type="radio" name="choice29">push();</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">Требуется удалить последний элемент
+        массива. Какой метод для этого следует
+        вызвать?
+        </div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice30">reverse();</li>
+<li><input type="radio" name="choice30">join();</li>
+<li><input type="radio" name="choice30" value="true">pop();</li>
+<li><input type="radio" name="choice30">push();</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Массивы</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое функция?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice31"> Это именованный участок кода, который может быть
+    вызван по имени столько раз, сколько будет
+    необходимо.
+    </li>
+<li><input type="radio" name="choice31" value="true">Это простая переменная</li>
+<li><input type="radio" name="choice31">Это массив.</li>
+<li><input type="radio" name="choice31">Это цикл.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое функция-конструктор?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice32" value="true"> Это функция, которая выполняет инициализацию свойств
+    объекта и предназначена для использования совместно с
+    инструкцией new.</li>
+<li><input type="radio" name="choice32"> Это функция, которая создана с помощью ключевого слова
+    function.</li>
+<li><input type="radio" name="choice32">Это массив функций.</li>
+<li><input type="radio" name="choice32">Это функциональный литерал.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Что такое объект Arguments?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice33">Это Функция-конструктор</li>
+<li><input type="radio" name="choice33" value="true">Это нечто вроде массива позволяющего извлекать
+    переданные функции значения по номеру, а не по
+    имени.</li>
+<li><input type="radio" name="choice33">Это функция, которая выполняет инициализацию
+    свойств объекта и предназначена для использования
+    совместно с инструкцией new.</li>
+<li><input type="radio" name="choice33">Это функциональный литерал.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Если в функции явно не вызвать ключевое
+        слово return, что вернет функция?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice34">значение null</li>
+<li><input type="radio" name="choice34" value="true">значение undefined</li>
+<li><input type="radio" name="choice34">значение 0</li>
+<li><input type="radio" name="choice34">значение -1</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Сколько аргументов может принимать
+        функция?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice35">Функция обязана принимать столько аргументов, сколько
+    указано аргументов в функции.</li>
+<li><input type="radio" name="choice35" value="true"> Функция не обязана принимать то количество аргументов,
+    сколько указана в параметрах</li>
+<li><input type="radio" name="choice35"> Функция не может принимать аргументы.</li>
+<li><input type="radio" name="choice35"> В функцию можно передавать произвольное количество аргументов, но не больше чем указано в параметрах.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Для чего используется ключевое слово
+        return?
+        </div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice36">Для вызова функции.</li>
+<li><input type="radio" name="choice36">Для передачи аргумента в функцию.</li>
+<li><input type="radio" name="choice36">Для передачи массива в функцию.</li>
+<li><input type="radio" name="choice36" value="true">Для возврата значения из функции.</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Имеется участок кода:<br>
+        for (var i = 0; i < 10; i++) {
+        }
+        document.write("i = " + i);<br>
+        Какой результат увидит пользователь?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice37" value="true">i=10</li>
+<li><input type="radio" name="choice37">i= будет ошибка при запуске браузера;</li>
+<li><input type="radio" name="choice37">i= undefined;</li>
+<li><input type="radio" name="choice37">i=null;</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Имеется участок кода:<br>
+        var f = function () {
+         result = 5 + 8;
+        };
+        f();
+        document.write("res = "+result);<br>
+        Какой результат увидит пользователь?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice38" value="true">res=13</li>
+<li><input type="radio" name="choice38">res = будет ошибка при запуске браузера;</li>
+<li><input type="radio" name="choice38">res = undefined;</li>
+<li><input type="radio" name="choice38">res =null; </li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Имеется участок кода:<br>
+        var f = function Func() {
+         result = 5 + 8;};
+         Func();
+         document.write("res = "+result);<br>
+        Какой результат увидит пользователь?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice39">res=13</li>
+<li><input type="radio" name="choice39" value="true">res = будет ошибка при запуске браузера;</li>
+<li><input type="radio" name="choice39">res = undefined;</li>
+<li><input type="radio" name="choice39">res =null;</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+<div class="number"><span></span></div>
+<div class="question">Имеется участок кода:<br>
+        var f = function() {
+         result = 8 + 8;};
+        f(5,8,3);
+        document.write("res = "+result);<br>
+        Какой результат увидит пользователь?</div>
+<div class="answers">
+<ol>
+<li><input type="radio" name="choice40" value="true">res=16</li>
+<li><input type="radio" name="choice40">res = будет ошибка при запуске браузера;</li>
+<li><input type="radio" name="choice40">res = undefined;</li>
+<li><input type="radio" name="choice40"> res =null;</li>
+</ol>
+</div>
+<div class="key"></div>
+<div class="category">Функции</div>
+</div>
+<div class="result"></div>
+<button id ='resultBtn'>Отправить</button>
+<script>
+        var resultBtn = document.querySelector('#resultBtn');
+        var mark = 0;
+        var questionNumber = document.querySelectorAll('span');
+        var counter = 1;
+        var testResult = document.getElementsByClassName('result')[0];
+        var radioBtn = document.querySelectorAll('input[type="radio"]');
+        for(i=0;i<questionNumber.length;i++){
+                questionNumber[i].innerHTML = counter++;
+        }
+        resultBtn.addEventListener('click', getResult);
+        function getResult(){
+                for(i=0;i<radioBtn.length;i++){
+                        if(radioBtn[i].checked == true && radioBtn[i].value == 'true'){
+                                radioBtn[i].parentElement.style.background = 'green';
+                                mark+=1;
+                                
+                        }
+                        else if(radioBtn[i].checked == true && radioBtn[i].value != 'true'){
+                                radioBtn[i].parentElement.style.background = 'red';
+                        }
+                        radioBtn[i].disabled = true;
+                }
+                testResult.innerHTML = 'Your result: ' + mark;
+        }
+</script>
+<script src="jQuery.js"></script>
+</body>
+</html>
